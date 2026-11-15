@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Experiment;
+use Illuminate\Support\Facades\Log;
 
 class ExperimentController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Index Method
+     *
+     * Used to return all experiments
      */
     public function index()
     {
@@ -15,15 +19,9 @@ class ExperimentController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Store Method
+     *
+     * Used to create a new experiment
      */
     public function store(Request $request)
     {
@@ -31,33 +29,31 @@ class ExperimentController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Show Method
+     *
+     * used to retrieve a specific experiment
      */
-    public function show(string $id)
+    public function show($id)
     {
         //
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Update Method
+     *
+     * used to update an experiment
      */
-    public function edit(string $id)
+    public function update(Request $request, $id)
     {
         //
     }
 
     /**
-     * Update the specified resource in storage.
+     * Destroy Method
+     *
+     * Used to delete an experiment
      */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy($id)
     {
         //
     }
